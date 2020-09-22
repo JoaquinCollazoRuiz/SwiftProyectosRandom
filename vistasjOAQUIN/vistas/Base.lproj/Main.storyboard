@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="vistas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Watsup" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5li-zT-Rwe">
+                                <rect key="frame" x="79" y="51" width="162.5" height="113"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xxs-Tq-yyT">
+                                <rect key="frame" x="150" y="456" width="20.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="TextField" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vzL-p7-Ywb">
+                                <rect key="frame" x="120.5" y="156" width="79" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textField:" destination="BYZ-38-t0r" eventType="editingChanged" id="omM-r2-BPZ"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PI3-4j-ihr">
+                                <rect key="frame" x="133.5" y="118" width="53" height="30"/>
+                                <state key="normal" title="SUMAR"/>
+                                <connections>
+                                    <action selector="boton1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="20t-aY-GGD"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="JQD-fC-9Y6">
+                                <rect key="frame" x="93" y="225" width="134" height="31"/>
+                                <connections>
+                                    <action selector="slider:" destination="BYZ-38-t0r" eventType="valueChanged" id="1E8-II-2W1"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JQD-fC-9Y6" secondAttribute="trailing" constant="95" id="6gA-Mu-INy"/>
+                            <constraint firstItem="JQD-fC-9Y6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="95" id="ALv-10-cYF"/>
+                            <constraint firstItem="PI3-4j-ihr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bxb-hW-WJp"/>
+                            <constraint firstItem="Xxs-Tq-yyT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D13-8Y-6kz"/>
+                            <constraint firstItem="JQD-fC-9Y6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KPs-2p-YNZ"/>
+                            <constraint firstItem="JQD-fC-9Y6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TBT-cW-coY"/>
+                            <constraint firstItem="5li-zT-Rwe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ubp-Ud-Gex"/>
+                            <constraint firstItem="vzL-p7-Ywb" firstAttribute="top" secondItem="PI3-4j-ihr" secondAttribute="bottom" constant="8" id="aYL-hP-ne9"/>
+                            <constraint firstItem="vzL-p7-Ywb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fkS-T5-aXQ"/>
+                            <constraint firstItem="JQD-fC-9Y6" firstAttribute="top" secondItem="vzL-p7-Ywb" secondAttribute="bottom" constant="39" id="fv4-aL-fBD"/>
+                            <constraint firstItem="JQD-fC-9Y6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jH7-u0-dm5"/>
+                            <constraint firstItem="vzL-p7-Ywb" firstAttribute="top" secondItem="PI3-4j-ihr" secondAttribute="bottom" constant="8" id="lER-6g-kuf"/>
+                            <constraint firstItem="Xxs-Tq-yyT" firstAttribute="top" secondItem="vzL-p7-Ywb" secondAttribute="bottom" constant="270" id="tN3-lA-vlr"/>
+                            <constraint firstItem="JQD-fC-9Y6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zl0-ve-BTE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="lbl" destination="Xxs-Tq-yyT" id="fny-Nd-Lno"/>
+                        <outlet property="watsup" destination="5li-zT-Rwe" id="jBH-w5-bpM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+</document>
